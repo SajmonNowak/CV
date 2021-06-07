@@ -1,0 +1,19 @@
+.eduSection {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.eduDate {
+  display: flex !important;
+}
+
+.eduHeader {
+  display: flex;
+  color: var(--myGrey);
+  font-weight: bold;
+}
+
+.eduGrad {
+  font-size: 18px;
+  font-weight: bold;
+}

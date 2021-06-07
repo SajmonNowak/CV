@@ -1,0 +1,43 @@
+#main {
+  width: 21cm;
+  height: 29.7cm;
+  font-size: 14px;
+  margin: 20px auto;
+  display: flex;
+  padding: 10px;
+  padding-top: 30px;
+  line-height: 1.5em;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  overflow-wrap: break-word;
+}
+
+.personalSection {
+  width: 35%;
+}
+
+.rightSide {
+  width: 65%;
+  padding-left: 20px;
+  list-style-position: inside;
+}
+
+.remove {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.addSection {
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 auto;
+  border: 1px dashed;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}

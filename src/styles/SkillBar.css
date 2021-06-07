@@ -1,0 +1,18 @@
+.skillBar {
+  margin-top: 5px;
+  width: 200px;
+  height: 12px;
+  border: 1px solid;
+  z-index: -1;
+}
+
+.skillPercentage {
+  background-color: var(--myBlue);
+  height: 100%;
+  z-index: 10;
+}
+
+.skill {
+  margin-top: 10px;
+  font-weight: bold;
+}

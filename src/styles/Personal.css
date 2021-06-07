@@ -1,0 +1,91 @@
+#personalDiv {
+  padding-bottom: 20px;
+  border-right: 2px solid var(--myBlue);
+  padding-right: 25px;
+}
+
+.pictureDiv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  z-index: 1;
+  padding-bottom: 20px;
+}
+
+.image {
+  height: 175px;
+  width: 175px;
+  margin: 0 auto;
+  display: block;
+  z-index: 1;
+  background-size: 175px 175px;
+}
+
+.imgDiv {
+  z-index: 1;
+  position: relative;
+  height: 175px;
+  width: 175px;
+}
+
+.imgDiv::before {
+  z-index: -1;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 175px;
+  height: 175px;
+  border: 1px solid var(--myBlue);
+}
+
+.personalInfo {
+  padding-left: 25px;
+  font-weight: bold;
+}
+
+.name {
+  font-family: "Open Sans" !important;
+  font-size: 26px;
+  font-weight: bold !important;
+}
+
+.job {
+  font-style: italic;
+  font-weight: 900;
+  color: var(--myBlue);
+  padding: 5px 0px;
+}
+
+.contact {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.contactDiv {
+  display: flex;
+}
+
+.socialMediaProfile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  line-height: 0px;
+  margin-bottom: 2px;
+}
+
+.socialMediaProfile i {
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  color: var(--myBlue);
+  padding-left: 5px;
+}
+
+.trashSM {
+  color: red !important;
+}

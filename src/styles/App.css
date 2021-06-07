@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+
+:root {
+  --myBlue: #61a5c2;
+  --myGrey: #777777;
+}
+
+#App {
+  font-family: "Montserrat";
+}
+
+#App h2 {
+  font-family: "Open Sans" !important;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+#App h1 {
+  font-family: "Open Sans" !important;
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+.printInfo {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+@media print {
+  .notPrinted {
+    display: none;
+  }
+
+  .isPrinted {
+    display: block;
+    box-shadow: none !important;
+  }
+}

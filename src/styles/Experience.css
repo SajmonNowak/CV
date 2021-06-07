@@ -1,0 +1,77 @@
+.experienceBlock {
+  margin-bottom: 20px;
+}
+
+.experienceSection {
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.date,
+.company {
+  color: var(--myGrey);
+  font-weight: bold;
+}
+
+.company {
+  margin-bottom: 10px;
+}
+
+.position {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.jobDescription {
+  margin-bottom: 5px;
+  width: 100%;
+  height: px;
+}
+
+.list {
+  margin-top: 5px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: 25px;
+}
+
+.listItem::before {
+  content: "\26AC";
+  color: var(--myBlue);
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+  font-size: 25px;
+  align-self: flex-start;
+  height: 0px;
+}
+
+.listItem span {
+  padding-top: 4px;
+}
+
+.trashItem {
+  padding-left: 5px;
+}
+
+.addItemDiv {
+  display: flex;
+  justify-content: center;
+  color: var(--myGrey);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.removeExperience {
+  padding: 10px;
+}
+
+.trashSection {
+  padding-right: 5px;
+}

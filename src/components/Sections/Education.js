@@ -32,18 +32,18 @@ const EducationSection = () => {
 
   return (
     <div onClick={() => setIsVisible(!isVisible)}>
-      <h2>Education</h2>
+      <h2 className="heading">Bildung</h2>
       {createEducationSection()}
       {isVisible && (
         <div className="addSection" ref={ref} onClick={addEducation}>
-          + Add Skill
+          + Add Section
         </div>
       )}
     </div>
   );
 };
 
-const Education = ({ addSection, deleteSection, id }) => {
+const Education = ({ deleteSection, id }) => {
   const { ref, isVisible, setIsVisible } = useVisible(false);
 
   return (

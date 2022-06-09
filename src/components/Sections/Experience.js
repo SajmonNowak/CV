@@ -34,7 +34,7 @@ const ExperienceSection = () => {
 
   return (
     <div className="experienceBlock" onClick={() => setIsVisible(!isVisible)}>
-      <h2>Experience</h2>
+      <h2 className="heading">Erfahrung</h2>
       {createExperienceSection()}
       {isVisible && (
         <div ref={ref} onClick={addExperience} className="addSection">

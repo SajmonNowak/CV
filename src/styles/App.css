@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
 :root {
   --main: #063773;
@@ -7,13 +8,25 @@
 }
 
 #App {
-  font-family: "Montserrat";
+  font-family: "Source Sans Pro";
+}
+
+.heading {
+  color: #063773;
+  border-bottom: 2px solid;
 }
 
 #App h2 {
   font-family: "Open Sans" !important;
-  font-size: 22px;
-  margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.heading {
+  border-bottom: 2px solid;
+  text-align: end;
+  padding-bottom: 4px;
 }
 
 #App h1 {

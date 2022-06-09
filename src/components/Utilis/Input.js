@@ -43,7 +43,7 @@ function Input({
           defaultValue={info}
           autoFocus
         />
-        {deleteFunction && <div style={{paddingLeft: "10px"}} onClick={(e) => {deleteFunction(id); setEdit(false)}}>X</div>}
+        {deleteFunction && <div style={{padding: "0 10px", color: "red"}} onClick={(e) => {deleteFunction(id); setEdit(false)}}>X</div>}
       </div>
     );
   } else {

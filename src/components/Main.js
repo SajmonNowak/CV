@@ -4,6 +4,8 @@ import Personal from "./Sections/Personal";
 import Skill from "./Sections/Skill";
 import EducationSection from "./Sections/Education";
 import ExperienceSection from "./Sections/Experience";
+import AwardsSection from "./Sections/Awards";
+
 
 const Main = () => {
   return (
@@ -17,6 +19,7 @@ const Main = () => {
       <div className="rightSide">
         <ExperienceSection />
         <EducationSection />
+        <AwardsSection />
       </div>
     </div>
   );

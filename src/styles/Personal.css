@@ -1,5 +1,5 @@
 #personalDiv {
-  padding:25px;
+  padding: 25px;
 }
 
 .pictureDiv {
@@ -27,7 +27,7 @@
   width: 175px;
 }
 
-.imgDiv::before {
+/* .imgDiv::before {
   z-index: -1;
   content: "";
   display: block;
@@ -37,7 +37,7 @@
   width: 175px;
   height: 175px;
   border: 1px solid var(--myBlue);
-}
+} */
 
 .personalInfo {
   margin-top: 20px;
@@ -45,7 +45,7 @@
 }
 
 .name {
-  font-family: "Open Sans" !important;
+  font-style: "Montserat" !important;
   font-size: 26px;
   font-weight: bold !important;
 }

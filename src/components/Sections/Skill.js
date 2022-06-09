@@ -80,8 +80,7 @@ const Skills = () => {
     >
       <h2>Fähigkeiten</h2>
       <Textarea
-        defaultValue="Außergewöhnliche kreative und analytische Fähigkeiten
-        Umfassende Vertrautheit mit Photoshop und Flash."
+        defaultValue="Exceptional creative and analytical skills Extensive familiarity with Photoshop and Flash."
       />
       <div class="tag-container">{displayTags()}</div>
       <div className="bars-container">{createSkillBars()}</div>

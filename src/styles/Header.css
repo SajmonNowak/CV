@@ -6,6 +6,7 @@
   height: 100px;
   background-color: var(--myGrey);
   border-bottom: 2px solid var(--myBlue);
+  margin-bottom: 20px;
 }
 
 .heading {

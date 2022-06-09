@@ -29,6 +29,8 @@ const Personal = () => {
         icon = "fab fa-github";
         setGitHub(true);
         break;
+        default:
+          break;
     }
 
     setSocial(social.concat(icon));
@@ -47,6 +49,8 @@ const Personal = () => {
       case "fab fa-github":
         setGitHub(false);
         break;
+        default:
+          break;
     }
 
     setSocial(newArray);

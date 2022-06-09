@@ -1,8 +1,6 @@
-import Personal from "./components/Sections/Personal";
 import Main from "./components/Main";
 import Header from "./components/Header";
 import "./styles/App.css";
-import { PDFViewer } from "@react-pdf/renderer";
 
 function App() {
   return (

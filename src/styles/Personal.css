@@ -1,7 +1,5 @@
 #personalDiv {
-  padding-bottom: 20px;
-  border-right: 2px solid var(--myBlue);
-  padding-right: 25px;
+  padding:25px;
 }
 
 .pictureDiv {
@@ -42,7 +40,7 @@
 }
 
 .personalInfo {
-  padding-left: 25px;
+  margin-top: 20px;
   font-weight: bold;
 }
 

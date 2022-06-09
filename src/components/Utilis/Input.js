@@ -1,27 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "../../styles/Input.css";
+import useOutsideAlerter from "./useOutsideAlerter"
 
 function Input({
   id,
+  key,
   placeholder,
   defaultValue,
   passInputToParent,
   classDefault,
+  deleteFunction,
 }) {
-  const [info, setInfo] = useState({
-    inputValue: defaultValue,
-  });
+  const [info, setInfo] = useState(defaultValue);
+
   const [edit, setEdit] = useState(false);
+  const wrapperRef = useRef(null);
 
   const getInfo = (e) => {
     e.preventDefault();
 
-    setInfo({
-      inputValue: e.target.value,
-    });
-
+    setInfo(e.target.value);
+    
     if (passInputToParent) {
-      passInputToParent(e.target.value);
+      passInputToParent(e.target.value, e.target);
     }
   };
 
@@ -29,22 +30,32 @@ function Input({
     setEdit(false);
   };
 
+  useOutsideAlerter(wrapperRef, closeEdit);
+
   if (edit) {
     return (
-      <input
+      <div style={{display: "flex"}} ref={wrapperRef}>
+        <input
         id={id}
-        onChange={getInfo}
-        onBlur={closeEdit}
-        type="text"
-        placeholder={placeholder}
-        defaultValue={info.inputValue}
-        autoFocus
-      />
+          onChange={getInfo}
+          type="text"
+          placeholder={placeholder}
+          defaultValue={info}
+          autoFocus
+        />
+        {deleteFunction && <div style={{paddingLeft: "10px"}} onClick={(e) => {deleteFunction(id); setEdit(false)}}>X</div>}
+      </div>
     );
   } else {
     return (
-      <div onClick={() => setEdit(true)} className={classDefault}>
-        {info.inputValue}
+      <div
+        onClick={() => {
+          setEdit(true);
+        }}
+        className={classDefault}
+        key={key}
+      >
+        {info}
       </div>
     );
   }

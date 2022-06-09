@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Input from "./Input";
 import useVisible from "./useVisible";
-import "../../styles/SkillBar.css";
+import "../../styles/Skills.css";
 
 const SkillBar = ({ deleteSkill, id }) => {
   const { ref, isVisible, setIsVisible } = useVisible(false);
@@ -16,6 +16,10 @@ const SkillBar = ({ deleteSkill, id }) => {
     setSkillPercentage(e.target.value);
   };
 
+  const handleClick = () => {
+    setIsVisible(!isVisible);
+  } 
+
   if (isVisible) {
     return (
       <div ref={ref}>
@@ -26,13 +30,13 @@ const SkillBar = ({ deleteSkill, id }) => {
         />
         <input type="range" onChange={changeSkillPercentage} />
         <div>
-          <i onClick={() => deleteSkill(id)} class="far fa-trash-alt trashSM" />
+          <i onClick={(e) => deleteSkill(id)} class="far fa-trash-alt trashSM" />
         </div>
       </div>
     );
   } else {
     return (
-      <div onClick={() => setIsVisible(!isVisible)}>
+      <div onClick={handleClick}>
         <div className="skill">
           <div>{skillName}</div>
           <div className="skillBar">

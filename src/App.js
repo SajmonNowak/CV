@@ -31,7 +31,7 @@ function App() {
     <div id="App">
       <Header colorSettings={colorSettings} changeColor={changeColor} />
       <Main colorSettings={colorSettings} />
-      <p className="printInfo notPrinted">
+      <p className="printInfo notPrinted" style={{marginTop: "20px"}}>
         * Make sure to enable background graphics / images and remove Header /
         Footer in your print setting.
       </p>

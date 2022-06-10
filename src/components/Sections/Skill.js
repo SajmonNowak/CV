@@ -87,16 +87,16 @@ const Skills = ({colorSettings}) => {
       {isVisible && (
         <div ref={ref}>
           <div
-            style={{ marginTop: "10px" }}
             onClick={addSkill}
             className="addSection"
+            style={{marginTop: "10px", color:`${colorSettings.primary}`, filter: "invert(100%)"}}
           >
             Add Bar
           </div>
           <div
-            style={{ marginTop: "10px" }}
             onClick={addTag}
             className="addSection"
+            style={{marginTop: "10px", color:`${colorSettings.primary}`, filter: "invert(100%)"}}
           >
             Add Tag
           </div>

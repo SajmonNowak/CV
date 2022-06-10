@@ -110,22 +110,23 @@ const Personal = ({colorSettings}) => {
           {createSocialMedia()}
         </div>
         {isVisible && (
-          <div ref={ref} className="addContact">
+          <div ref={ref} className="addContact" >
             {!linkedIn && (
               <div
                 className="addSection"
+                style={{color:`${colorSettings.primary}`, filter: "invert(100%)"}}
                 onClick={() => addContact("LinkedIn")}
               >
                 + LinkedIn
               </div>
             )}
             {!xing && (
-              <div className="addSection" onClick={() => addContact("Xing")}>
+              <div className="addSection" onClick={() => addContact("Xing")} style={{color:`${colorSettings.primary}`, filter: "invert(100%)"}}>
                 + Xing
               </div>
             )}
             {!gitHub && (
-              <div className="addSection" onClick={() => addContact("GitHub")}>
+              <div className="addSection" onClick={() => addContact("GitHub")} style={{color:`${colorSettings.primary}`, filter: "invert(100%)"}}>
                 + GitHub
               </div>
             )}

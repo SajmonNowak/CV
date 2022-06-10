@@ -6,7 +6,7 @@ import useVisible from "../Utilis/useVisible";
 import SocialMedia from "../Utilis/SocialMedia";
 import Image from "../Utilis/Image";
 
-const Personal = () => {
+const Personal = ({colorSettings}) => {
   const [social, setSocial] = useState([]);
   const [linkedIn, setLinkedIn] = useState(false);
   const [xing, setXing] = useState(false);
@@ -58,7 +58,7 @@ const Personal = () => {
 
   const createSocialMedia = () => {
     return social.map((sm) => {
-      return <SocialMedia icon={sm} remove={removeSM} />;
+      return <SocialMedia icon={sm} remove={removeSM} colorSettings={colorSettings} />;
     });
   };
 
@@ -75,12 +75,14 @@ const Personal = () => {
           placeholder="Full Name"
           classDefault="name"
         />
-        <Input
-          defaultValue="Web Developer"
-          placeholder="Profession"
-          id="professionInput"
-          classDefault="job"
-        />
+        <div  style={{color:`${colorSettings.secondary}`}}>
+          <Input
+            defaultValue="Web Developer"
+            placeholder="Profession"
+            id="professionInput"
+            classDefault="job"
+          />
+        </div>
         <div id="descriptionDiv">
           <Textarea
             placeholder="Description"
@@ -95,7 +97,7 @@ const Personal = () => {
               id="mailInput"
               placeholder="E-Mail"
             />
-            <i class="far fa-envelope-open"></i>
+            <i class="far fa-envelope-open" style={{color: `${colorSettings.secondary}`}}></i>
           </div>
           <div className="socialMediaProfile">
             <Input
@@ -103,7 +105,7 @@ const Personal = () => {
               id="telInput"
               placeholder="Telephone"
             />
-            <i class="fas fa-mobile-alt"></i>
+            <i class="fas fa-mobile-alt" style={{color: `${colorSettings.secondary}`}}></i>
           </div>
           {createSocialMedia()}
         </div>

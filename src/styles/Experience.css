@@ -38,7 +38,7 @@
 
 .listItem::before {
   content: "\26AC";
-  color: var(--myBlue);
+  color: inherit;
   font-weight: bold;
   display: inline-block;
   width: 1.5em;

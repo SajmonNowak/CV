@@ -10,6 +10,7 @@ function Input({
   passInputToParent,
   classDefault,
   deleteFunction,
+  colorSettings
 }) {
   const [info, setInfo] = useState(defaultValue);
 

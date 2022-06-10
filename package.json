@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
     "react": "^17.0.2",
+    "react-colorful": "^5.5.1",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "uniqid": "^5.3.0",
@@ -19,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -43,6 +44,5 @@
   "devDependencies": {
     "gh-pages": "^3.2.0"
   },
-  "homepage":"http://sajmonnowak.github.io/CV"
-
+  "homepage": "http://sajmonnowak.github.io/CV"
 }

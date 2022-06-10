@@ -3,7 +3,7 @@ import ListItem from "./ListItem";
 import uniqid from "uniqid";
 import useVisible from "./useVisible";
 
-const List = () => {
+const List = ({colorSettings}) => {
   const removeListItem = (key) => {
     const newArray = listItems.filter((item) => item !== key);
     setListItem(newArray);
@@ -26,6 +26,7 @@ const List = () => {
               defaultValue="This is my Experience"
               id={item}
               key={item}
+              colorSettings={colorSettings}
             />
           );
         })}

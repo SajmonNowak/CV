@@ -4,7 +4,7 @@ import useVisible from "../Utilis/useVisible";
 import uniqid from "uniqid";
 import "../../styles/Education.css";
 
-const EducationSection = () => {
+const EducationSection = ({ colorSettings }) => {
   const [eduSections, setEduSections] = useState(["10", "11"]);
   const { ref, isVisible, setIsVisible } = useVisible(false);
 
@@ -32,7 +32,9 @@ const EducationSection = () => {
 
   return (
     <div onClick={() => setIsVisible(!isVisible)}>
-      <h2 className="heading">Bildung</h2>
+      <h2 className="heading" style={{ color: `${colorSettings.primary}` }}>
+        Bildung
+      </h2>
       {createEducationSection()}
       {isVisible && (
         <div className="addSection" ref={ref} onClick={addEducation}>
@@ -43,7 +45,7 @@ const EducationSection = () => {
   );
 };
 
-const Education = ({ deleteSection, id }) => {
+const Education = ({ deleteSection, id, colorSettings }) => {
   const { ref, isVisible, setIsVisible } = useVisible(false);
 
   return (

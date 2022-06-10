@@ -7,19 +7,19 @@ import ExperienceSection from "./Sections/Experience";
 import AwardsSection from "./Sections/Awards";
 
 
-const Main = () => {
+const Main = ({colorSettings}) => {
   return (
     <div id="main" className="isPrinted">
-      <div className="personalSection">
-        <Personal />
+      <div className="personalSection"  style={{backgroundColor: `${colorSettings.primary}`}}>
+        <Personal colorSettings={colorSettings} />
         <div className="skillSection">
-          <Skill />
+          <Skill colorSettings={colorSettings} />
         </div>
       </div>
       <div className="rightSide">
-        <ExperienceSection />
-        <EducationSection />
-        <AwardsSection />
+        <ExperienceSection colorSettings={colorSettings}/>
+        <EducationSection colorSettings={colorSettings}/>
+        <AwardsSection colorSettings={colorSettings}/>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import useVisible from "../Utilis/useVisible";
 
-const SocialMedia = ({ icon, remove }) => {
+const SocialMedia = ({ icon, remove, colorSettings }) => {
   const { ref, isVisible, setIsVisible } = useVisible(false);
   const [info, setInfo] = useState({
     inputValue: "Profile / Link",
@@ -23,7 +23,7 @@ const SocialMedia = ({ icon, remove }) => {
           defaultValue={info.inputValue}
           autoFocus
         />
-        <i class={icon}></i>
+        <i class={icon} style={{color: `${colorSettings.secondary}`}}></i>
 
         <div onClick={() => remove(icon)}>
           <i class="far fa-trash-alt trashSM" />
@@ -37,7 +37,7 @@ const SocialMedia = ({ icon, remove }) => {
         onClick={() => setIsVisible(!isVisible)}
       >
         <div>{info.inputValue}</div>
-        <i class={icon}></i>
+        <i class={icon} style={{color: `${colorSettings.secondary}`}}></i>
       </div>
     );
   }

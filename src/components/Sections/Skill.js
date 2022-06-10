@@ -7,7 +7,7 @@ import Tag from "../Utilis/Tag";
 import "../../styles/Skills.css";
 import Input from "../Utilis/Input";
 
-const Skills = () => {
+const Skills = ({colorSettings}) => {
   const [skillSections, setSkillSections] = useState(["10", "20"]);
   const [skillTags, setSkillTags] = useState([
     { name: "React", id: 451 },
@@ -59,7 +59,7 @@ const Skills = () => {
   const displayTags = () => {
     return skillTags.map((tag) => {
       return (
-        <div className="tag">
+        <div className="tag"  style={{backgroundColor:`${colorSettings.secondary}`, color: `${colorSettings.primary}`}}>
           <Input
             id={tag.id}
             placeholder="Tag"

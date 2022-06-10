@@ -6,7 +6,7 @@ import Textarea from "../Utilis/Textarea";
 import useVisible from "../Utilis/useVisible";
 import "../../styles/Experience.css";
 
-const ExperienceSection = () => {
+const ExperienceSection = ({ colorSettings }) => {
   const { ref, isVisible, setIsVisible } = useVisible(false);
   const [expSections, setExpSections] = useState(["1", "2"]);
 
@@ -27,6 +27,7 @@ const ExperienceSection = () => {
           deleteSection={deleteExperience}
           key={section}
           id={section}
+          colorSettings={colorSettings}
         />
       );
     });
@@ -34,7 +35,9 @@ const ExperienceSection = () => {
 
   return (
     <div className="experienceBlock" onClick={() => setIsVisible(!isVisible)}>
-      <h2 className="heading">Erfahrung</h2>
+      <h2 className="heading" style={{ color: `${colorSettings.primary}` }}>
+        Erfahrung
+      </h2>
       {createExperienceSection()}
       {isVisible && (
         <div ref={ref} onClick={addExperience} className="addSection">
@@ -45,7 +48,7 @@ const ExperienceSection = () => {
   );
 };
 
-const Experience = ({ addSection, deleteSection, id }) => {
+const Experience = ({ addSection, deleteSection, id, colorSettings }) => {
   const { ref, isVisible, setIsVisible } = useVisible(false);
 
   return (
@@ -74,7 +77,7 @@ const Experience = ({ addSection, deleteSection, id }) => {
         defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus turpis ex, sed suscipit tortor fermentum id. In eu ipsum odio. Quisque posuere ligula nec erat placerat vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu ornare eros. "
         defaultClass="jobDescription"
       />
-      <List />
+      <List colorSettings={colorSettings} />
       {isVisible && (
         <div ref={ref}>
           <div

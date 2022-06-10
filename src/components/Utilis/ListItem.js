@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import useVisible from "./useVisible";
 
-const ListItem = ({ defaultValue, placeholder, id, deleteFunction }) => {
+const ListItem = ({ defaultValue, placeholder, id, deleteFunction, colorSettings }) => {
   const [info, setInfo] = useState({
     inputValue: defaultValue,
   });
@@ -15,7 +15,7 @@ const ListItem = ({ defaultValue, placeholder, id, deleteFunction }) => {
 
   if (isVisible) {
     return (
-      <li className="listItem" ref={ref}>
+      <li className="listItem" ref={ref} style={{color: `${colorSettings.secondary}`}}>
         <input
           onChange={getInfo}
           type="text"
@@ -30,8 +30,8 @@ const ListItem = ({ defaultValue, placeholder, id, deleteFunction }) => {
     );
   } else {
     return (
-      <li className="listItem" onClick={() => setIsVisible(!isVisible)}>
-        <span>{info.inputValue}</span>
+      <li className="listItem" onClick={() => setIsVisible(!isVisible)} style={{color: `${colorSettings.secondary}`}}>
+        <span style={{color: "black"}}>{info.inputValue}</span>
       </li>
     );
   }

@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/CV/static/css/main.b6dd45f1.chunk.css",
-    "main.js": "/CV/static/js/main.cd62acbb.chunk.js",
-    "main.js.map": "/CV/static/js/main.cd62acbb.chunk.js.map",
+    "main.css": "/CV/static/css/main.6d654b62.chunk.css",
+    "main.js": "/CV/static/js/main.195e6648.chunk.js",
+    "main.js.map": "/CV/static/js/main.195e6648.chunk.js.map",
     "runtime-main.js": "/CV/static/js/runtime-main.f3f3774d.js",
     "runtime-main.js.map": "/CV/static/js/runtime-main.f3f3774d.js.map",
     "static/js/2.4d0b460f.chunk.js": "/CV/static/js/2.4d0b460f.chunk.js",
     "static/js/2.4d0b460f.chunk.js.map": "/CV/static/js/2.4d0b460f.chunk.js.map",
     "index.html": "/CV/index.html",
-    "static/css/main.b6dd45f1.chunk.css.map": "/CV/static/css/main.b6dd45f1.chunk.css.map",
+    "static/css/main.6d654b62.chunk.css.map": "/CV/static/css/main.6d654b62.chunk.css.map",
     "static/js/2.4d0b460f.chunk.js.LICENSE.txt": "/CV/static/js/2.4d0b460f.chunk.js.LICENSE.txt",
     "static/media/Placeholder.79bfd233.png": "/CV/static/media/Placeholder.79bfd233.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f3f3774d.js",
     "static/js/2.4d0b460f.chunk.js",
-    "static/css/main.b6dd45f1.chunk.css",
-    "static/js/main.cd62acbb.chunk.js"
+    "static/css/main.6d654b62.chunk.css",
+    "static/js/main.195e6648.chunk.js"
   ]
 }

@@ -35,12 +35,14 @@ const EducationSection = ({ colorSettings }) => {
       <h2 className="heading" style={{ color: `${colorSettings.primary}` }}>
         Bildung
       </h2>
+      <div className="editable-hover">
       {createEducationSection()}
       {isVisible && (
         <div className="addSection" ref={ref} onClick={addEducation}>
           + Add Section
         </div>
       )}
+      </div>
     </div>
   );
 };

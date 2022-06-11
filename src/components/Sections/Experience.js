@@ -38,12 +38,14 @@ const ExperienceSection = ({ colorSettings }) => {
       <h2 className="heading" style={{ color: `${colorSettings.primary}` }}>
         Erfahrung
       </h2>
-      {createExperienceSection()}
-      {isVisible && (
-        <div ref={ref} onClick={addExperience} className="addSection">
-          + Add Experience
-        </div>
-      )}
+      <div className="editable-hover">
+        {createExperienceSection()}
+        {isVisible && (
+          <div ref={ref} onClick={addExperience} className="addSection">
+            + Add Experience
+          </div>
+        )}
+      </div>
     </div>
   );
 };

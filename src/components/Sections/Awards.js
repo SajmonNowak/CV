@@ -35,12 +35,14 @@ const Awards = ({ colorSettings }) => {
       <h2 className="heading" style={{ color: `${colorSettings.primary}` }}>
         Auszeichnungen
       </h2>
-      {createAwardSection()}
-      {isVisible && (
-        <div className="addSection" ref={ref} onClick={addAward}>
-          + Add Section
-        </div>
-      )}
+      <div className="editable-hover">
+        {createAwardSection()}
+        {isVisible && (
+          <div className="addSection" ref={ref} onClick={addAward}>
+            + Add Section
+          </div>
+        )}
+      </div>
     </div>
   );
 };

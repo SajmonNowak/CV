@@ -9,14 +9,19 @@
   padding-top: 25px;
   z-index: 1;
   padding-bottom: 20px;
+  object-fit: cover;
+
 }
 
 .image {
-  width: 175px;
+  width: 180px;
+  max-height: 180px;
   margin: 0 auto;
   display: block;
   z-index: 1;
   background-size: 175px 175px;
+  object-fit: cover;
+
 }
 
 .imgDiv {

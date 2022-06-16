@@ -93,7 +93,7 @@ const Skills = ({ colorSettings }) => {
         }}
       >
         <Textarea defaultValue="In eu ipsum odio. Quisque posuere ligula nec erat placerat vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu ornare eros. " />
-        <div class="tag-container">{displayTags()}</div>
+        <div className="tag-container">{displayTags()}</div>
         <div className="bars-container">{createSkillBars()}</div>
         {isVisible && (
           <div ref={ref}>

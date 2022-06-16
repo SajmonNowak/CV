@@ -110,7 +110,7 @@ const Personal = ({ colorSettings }) => {
                 placeholder="E-Mail"
               />
               <i
-                class="far fa-envelope-open"
+                className="far fa-envelope-open"
                 style={{ color: `${colorSettings.secondary}` }}
               ></i>
             </div>
@@ -121,7 +121,7 @@ const Personal = ({ colorSettings }) => {
                 placeholder="Telephone"
               />
               <i
-                class="fas fa-mobile-alt"
+                className="fas fa-mobile-alt"
                 style={{ color: `${colorSettings.secondary}` }}
               ></i>
             </div>

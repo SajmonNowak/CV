@@ -11,11 +11,13 @@ const Header = ({ colorSettings, changeColor }) => {
           colorSettings={colorSettings.primary}
           changeColor={changeColor}
           primaryOrSecondary="primary"
+          key={"color-sel-1"}
         />
         <ColorSelector
           colorSettings={colorSettings.secondary}
           changeColor={changeColor}
           primaryOrSecondary="secondary"
+          key={"color-sel-2"}
         />
       </div>
       <div className="buttonDiv">

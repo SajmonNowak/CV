@@ -6,8 +6,11 @@ const Image = () => {
   const fileInput = useRef();
 
   const fileSelectedHandler = (e) => {
+    
+    if(e.target.files[0] !== undefined){
     const newSrc = URL.createObjectURL(e.target.files[0]);
     setImage(newSrc);
+    }
   };
 
   return (
@@ -16,6 +19,7 @@ const Image = () => {
         onClick={() => fileInput.current.click()}
         src={image}
         className="image"
+        alt=""
       />
       <input
         ref={fileInput}

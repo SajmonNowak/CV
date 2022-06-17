@@ -6,7 +6,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  padding-top: 25px;
+  padding-top: 20px;
   z-index: 1;
   padding-bottom: 20px;
   object-fit: cover;
@@ -15,11 +15,10 @@
 
 .image {
   width: 180px;
-  max-height: 180px;
+  max-height: 220px;
   margin: 0 auto;
   display: block;
   z-index: 1;
-  background-size: 175px 175px;
   object-fit: cover;
 
 }
@@ -27,8 +26,8 @@
 .imgDiv {
   z-index: 1;
   position: relative;
-  height: 175px;
-  width: 175px;
+  max-height: 220px;
+  width: 180px;
 }
 
 /* .imgDiv::before {
